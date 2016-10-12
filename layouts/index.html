@@ -2,21 +2,36 @@
     <body>
         {{ partial "sidebar.html" . }}
         <div class="content-wrapper">
+          {{ $paginator := .Paginate (where .Data.Pages "Section" "post") }}
             <div class="content-wrapper__inner">
                 <section id="main">
                     <div>
-                        {{ range first 10 .Data.Pages }}
-                            {{ if eq .Type  "post" }}
-                                {{ .Render "summary"}}
-                            {{ end }}
+                        {{ range $paginator.Pages }}
+
+                            {{ .Render "summary"}}
+
                         {{ end }}
                     </div>
                     </br>
+                    <h4 class="space-between">
+                        {{ if $paginator.HasPrev}}
+                        <a href="{{ $paginator.Prev.URL }}">上一页</a>
+                        {{ else }}
+                        <a></a>
+                        {{ end }}
+                        <a href="{{ .Site.BaseURL }}/post/">归档</a>
+                        {{ if $paginator.HasNext }}
+                        <a href="{{ $paginator.Next.URL }}">下一页</a>
+                        {{ else }}
+                        <a></a>
+                        {{ end }}
+                    </h4>
                     <h4>
-                        <a href="{{ .Site.BaseURL }}/post/">Archive</a>
+
                     </h4>
                 </section>
             </div>
+
         </div>
         {{ partial "footer.html" .}}
         {{ partial "script.html" .}}

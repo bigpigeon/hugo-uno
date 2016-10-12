@@ -18,6 +18,7 @@
 @import 'reset.scss';
 @import 'grid.scss';
 @import 'variables.scss';
+@import 'table.scss';
 @import 'fontawsome/scss/font-awesome.scss';
 
 // ------------------------------
@@ -31,6 +32,7 @@
 // ------------------------------
 
 @import 'sections/post.scss';
+@import 'sections/sandbox.scss';
 
 // ------------------------------
 // COMPONENTS
@@ -47,4 +49,3 @@
 // ------------------------------
 
 @import 'media-queries.scss';
-

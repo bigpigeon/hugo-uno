@@ -6,6 +6,7 @@ homepage = "https://github.com/SenjinDarashiva/hugo-uno"
 tags = ["Responsive", "Awesome fonts", "Chart.js", "Lightbox", "gallery"]
 features = ["blog", ]
 
+
 [author]
     name = "Fredrik Loch"
     homepage = "http://fredrikloch.me"
@@ -14,3 +15,8 @@ features = ["blog", ]
     author =  "daleanthony"
     homepage = "http://daleanthony.com/"
     repo = "https://github.com/daleanthony/Uno"
+[blackfriday]
+    angledQuotes = true
+    fractions = true
+    plainIDAnchors = true
+    extensions = ["hardLineBreak", "Tables"]

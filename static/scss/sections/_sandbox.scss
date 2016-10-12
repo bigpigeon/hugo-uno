@@ -1,0 +1,25 @@
+// ------------------------------
+// SINGLE Sandbox LAYOUT
+// ------------------------------
+
+.sandbox-single {
+
+  pre {
+    width: 95%;
+  }
+
+  hr {
+    display: block;
+    width: 30%;
+    margin: 2em 0;
+    border-top: 1px solid $gray-light;
+  }
+  .sandbox-date{
+    margin-bottom: 1em;
+  }
+  p {
+    margin-top:1em;
+    line-height: 1.2em;
+  }
+
+}
