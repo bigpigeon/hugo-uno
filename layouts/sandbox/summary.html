@@ -1,10 +1,10 @@
-<article class="post">
+<article class="sandbox">
 <header>
-<h2><a href="{{ .Permalink }}">{{ .LinkTitle }} {{ if .Draft }}:: DRAFT{{end}}</a> </h2>
+<h4><a href="{{ .Permalink }}">{{ .LinkTitle }} {{ if .Draft }}:: DRAFT{{end}}</a> </h4>
 <div class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} - Read in {{ .ReadingTime }} Min </div>
 </header>
 <div class="summary">
-  <pre>{{ .Description }}</pre>
+  <span>{{ .Description }}</span>
 </div>
 <footer>
 <a href='{{ .Permalink }}'><nobr>继续阅读 →</nobr></a>

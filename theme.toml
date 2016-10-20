@@ -20,3 +20,5 @@ features = ["blog", ]
     fractions = true
     plainIDAnchors = true
     extensions = ["hardLineBreak", "Tables"]
+[Params]
+    SandboxPaginate = 10
