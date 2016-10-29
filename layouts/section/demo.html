@@ -2,7 +2,7 @@
 <body>
     {{ partial "sidebar.html" . }}
     <div class="content-wrapper">
-      {{ $paginator := (.Paginate (where .Data.Pages "Section" "sandbox") 10)  }}
+      {{ $paginator := (.Paginate (where .Data.Pages "Section" "demo" ) 10)  }}
         <div class="content-wrapper__inner">
             <section id="main">
                 <div class="sandbox-section">
